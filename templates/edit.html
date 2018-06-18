@@ -1,0 +1,15 @@
+{% extends 'bootstrap/base.html' %}
+{% block head %}
+ <link rel="stylesheet" href="{{ url_for('static', filename='edit.css') }}">
+{% endblock %}
+{% block body %}
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">New Body</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" cols="200" rows="13"></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+{% endblock %}
